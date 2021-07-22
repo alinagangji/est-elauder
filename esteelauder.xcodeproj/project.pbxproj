@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40E2C7126AA33660081E456 /* GalleryPt2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E2C7026AA33660081E456 /* GalleryPt2ViewController.swift */; };
+		A40E2C7326AA36DF0081E456 /* GalleruPt3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E2C7226AA36DF0081E456 /* GalleruPt3ViewController.swift */; };
+		A40E2C7526AA38E90081E456 /* GalleryPt4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E2C7426AA38E90081E456 /* GalleryPt4ViewController.swift */; };
+		A4365D0126A9D7E500D2AB92 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4365D0026A9D7E500D2AB92 /* InfoViewController.swift */; };
+		A4365D0326A9D9C900D2AB92 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4365D0226A9D9C900D2AB92 /* GalleryViewController.swift */; };
 		A47127D326A90F310060E911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47127D226A90F310060E911 /* AppDelegate.swift */; };
 		A47127D526A90F310060E911 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47127D426A90F310060E911 /* SceneDelegate.swift */; };
 		A47127D726A90F310060E911 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47127D626A90F310060E911 /* ViewController.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A40E2C7026AA33660081E456 /* GalleryPt2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPt2ViewController.swift; sourceTree = "<group>"; };
+		A40E2C7226AA36DF0081E456 /* GalleruPt3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleruPt3ViewController.swift; sourceTree = "<group>"; };
+		A40E2C7426AA38E90081E456 /* GalleryPt4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPt4ViewController.swift; sourceTree = "<group>"; };
+		A4365D0026A9D7E500D2AB92 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		A4365D0226A9D9C900D2AB92 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		A47127CF26A90F310060E911 /* esteelauder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = esteelauder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47127D226A90F310060E911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A47127D426A90F310060E911 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +72,11 @@
 				A47127D426A90F310060E911 /* SceneDelegate.swift */,
 				A47127D626A90F310060E911 /* ViewController.swift */,
 				A47127D826A90F310060E911 /* Main.storyboard */,
+				A40E2C7426AA38E90081E456 /* GalleryPt4ViewController.swift */,
+				A40E2C7226AA36DF0081E456 /* GalleruPt3ViewController.swift */,
+				A40E2C7026AA33660081E456 /* GalleryPt2ViewController.swift */,
+				A4365D0226A9D9C900D2AB92 /* GalleryViewController.swift */,
+				A4365D0026A9D7E500D2AB92 /* InfoViewController.swift */,
 				A47127DE26A90F350060E911 /* Assets.xcassets */,
 				A47127E026A90F350060E911 /* LaunchScreen.storyboard */,
 				A47127E326A90F350060E911 /* Info.plist */,
@@ -143,7 +158,12 @@
 				A47127D726A90F310060E911 /* ViewController.swift in Sources */,
 				A47127D326A90F310060E911 /* AppDelegate.swift in Sources */,
 				A47127D526A90F310060E911 /* SceneDelegate.swift in Sources */,
+				A40E2C7326AA36DF0081E456 /* GalleruPt3ViewController.swift in Sources */,
+				A4365D0326A9D9C900D2AB92 /* GalleryViewController.swift in Sources */,
+				A40E2C7526AA38E90081E456 /* GalleryPt4ViewController.swift in Sources */,
+				A40E2C7126AA33660081E456 /* GalleryPt2ViewController.swift in Sources */,
 				A47127DD26A90F310060E911 /* esteelauder.xcdatamodeld in Sources */,
+				A4365D0126A9D7E500D2AB92 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

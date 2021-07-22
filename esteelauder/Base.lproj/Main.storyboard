@@ -1,24 +1,724 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="esteelauder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wp7606734" translatesAutoresizingMaskIntoConstraints="NO" id="paF-0w-FK8">
+                                <rect key="frame" x="-33" y="-104" width="533" height="1147"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="dot.squareshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0Dj-jo-gmT">
+                                <rect key="frame" x="69" y="297" width="277" height="276"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="EL_4" translatesAutoresizingMaskIntoConstraints="NO" id="Y9h-YL-8e6">
+                                <rect key="frame" x="78" y="309" width="259" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waV-hJ-WXV">
+                                <rect key="frame" x="72" y="773" width="109" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
+                                <state key="normal" title="Gallery">
+                                    <color key="titleColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Wwo-l1-Tau" kind="show" id="nPH-tC-XdI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9K-iX-fht">
+                                <rect key="frame" x="227" y="710" width="91" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="402-12-ZPI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xne-b9-Mc0">
+                                <rect key="frame" x="202" y="773" width="144" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
+                                <state key="normal" title="Buy Now">
+                                    <color key="titleColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ca-t1-Zz5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUE-p3-bZ2">
+                                <rect key="frame" x="186" y="605" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Double Wear Stay in Place Foundation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67T-Fp-Pv3">
+                                <rect key="frame" x="12" y="601" width="391" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="24"/>
+                                <color key="textColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgB-tB-648">
+                                <rect key="frame" x="81" y="704" width="90" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
+                                <state key="normal" title="Info">
+                                    <color key="titleColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iI5-GJ-ig3" kind="show" id="KJU-lB-Doc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estée Lauder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4up-H5-UTS">
+                                <rect key="frame" x="34" y="97" width="347" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="58"/>
+                                <color key="textColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="paF-0w-FK8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-104" id="Pru-1L-FML"/>
+                            <constraint firstAttribute="trailing" secondItem="paF-0w-FK8" secondAttribute="trailing" constant="-86" id="RKz-p0-A7d"/>
+                            <constraint firstItem="paF-0w-FK8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-33" id="de8-A0-bT9"/>
+                            <constraint firstAttribute="bottom" secondItem="paF-0w-FK8" secondAttribute="bottom" constant="-147" id="eLv-fj-G3Z"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zNW-Yz-Iv3"/>
+                    <connections>
+                        <outlet property="Photo1" destination="Y9h-YL-8e6" id="mJ7-Nn-uYa"/>
+                        <outlet property="background" destination="paF-0w-FK8" id="9l8-Sf-X8O"/>
+                        <outlet property="border" destination="0Dj-jo-gmT" id="ZHQ-j6-s9s"/>
+                        <outlet property="foundationDescription" destination="67T-Fp-Pv3" id="37W-Ss-n5p"/>
+                        <outlet property="titleHome" destination="4up-H5-UTS" id="TRc-pX-Pf5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="72.991071428571431"/>
+        </scene>
+        <!--Gallery-->
+        <scene sceneID="uGz-N8-POJ">
+            <objects>
+                <viewController title="Gallery" modalPresentationStyle="fullScreen" id="Wwo-l1-Tau" customClass="GalleryViewController" customModule="esteelauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S6s-EY-1E5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estée Lauder Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knO-pR-b9Z">
+                                <rect key="frame" x="186" y="60" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="0.0"/>
+                                <color key="textColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AFm-8i-4Qg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wp7606734" translatesAutoresizingMaskIntoConstraints="NO" id="cfr-Wb-Aze">
+                                        <rect key="frame" x="-32" y="-125" width="533" height="1147"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estée Lauder Gallery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpY-gJ-Wne">
+                                        <rect key="frame" x="37" y="52" width="340" height="155"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="58"/>
+                                        <color key="textColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="dot.squareshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="msE-P2-mlS">
+                                        <rect key="frame" x="176" y="479" width="212" height="212"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="dot.squareshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Le0-G8-ynY">
+                                        <rect key="frame" x="25" y="971" width="212" height="211"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="dot.squareshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="j3j-qK-V97">
+                                        <rect key="frame" x="25" y="226" width="212" height="211"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_21" translatesAutoresizingMaskIntoConstraints="NO" id="ajp-fN-uTI">
+                                        <rect key="frame" x="194" y="496" width="176" height="179"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_19" translatesAutoresizingMaskIntoConstraints="NO" id="ng2-27-Kz3">
+                                        <rect key="frame" x="42" y="242" width="178" height="179"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldk-tZ-dVY">
+                                        <rect key="frame" x="42" y="780" width="91" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
+                                        <state key="normal" title="Home">
+                                            <color key="titleColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="HomeButton:" destination="Wwo-l1-Tau" eventType="touchUpInside" id="1sE-13-qyq"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="bk0-Co-gae"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGt-Is-qYN">
+                                        <rect key="frame" x="293" y="754" width="77" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <color key="tintColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="arrow.down" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="default">
+                                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="44"/>
+                                            </preferredSymbolConfiguration>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondPGGallery:" destination="Wwo-l1-Tau" eventType="touchUpInside" id="wdb-jK-qmH"/>
+                                            <segue destination="TND-f6-Aag" kind="show" id="tyn-H3-TCg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Spa-7s-v9I"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="AfU-dz-VzV"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dzY-iE-gpN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AFm-8i-4Qg" firstAttribute="top" secondItem="S6s-EY-1E5" secondAttribute="top" id="SKS-7f-E1P"/>
+                            <constraint firstItem="AFm-8i-4Qg" firstAttribute="leading" secondItem="dzY-iE-gpN" secondAttribute="leading" id="ZDa-zU-eUA"/>
+                            <constraint firstItem="AFm-8i-4Qg" firstAttribute="trailing" secondItem="dzY-iE-gpN" secondAttribute="trailing" id="g4r-SC-lJi"/>
+                            <constraint firstAttribute="bottom" secondItem="AFm-8i-4Qg" secondAttribute="bottom" id="u4d-kM-AeL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UwQ-i8-X6R"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="GalleryTitle" destination="GpY-gJ-Wne" id="a1J-cg-G1x"/>
+                        <outlet property="backgroundGallery" destination="cfr-Wb-Aze" id="a5b-Vr-unF"/>
+                        <outlet property="boderPhoto2" destination="msE-P2-mlS" id="lek-nB-oCz"/>
+                        <outlet property="borderPhoto1" destination="Le0-G8-ynY" id="iUf-pJ-T5l"/>
+                        <outlet property="photo1" destination="ng2-27-Kz3" id="8TZ-oa-lK1"/>
+                        <outlet property="photo2" destination="ajp-fN-uTI" id="euj-em-aGb"/>
+                        <outlet property="scrollvView" destination="AFm-8i-4Qg" id="mHg-u1-0Bt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4VM-Ue-e1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="777.45535714285711"/>
+        </scene>
+        <!--GalleryPt2-->
+        <scene sceneID="RYx-pf-p3T">
+            <objects>
+                <viewController title="GalleryPt2" modalPresentationStyle="fullScreen" id="TND-f6-Aag" customClass="GalleryPt2ViewController" customModule="esteelauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oZm-bb-lWA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wp7606734" translatesAutoresizingMaskIntoConstraints="NO" id="OHC-Bs-9Ny">
+                                <rect key="frame" x="-59" y="-101" width="533" height="1147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOy-wf-w4z">
+                                <rect key="frame" x="-49" y="-91" width="77" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="tintColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrow.down" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="default">
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="44"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="secondPGGallery:" destination="Wwo-l1-Tau" eventType="touchUpInside" id="vhH-yE-4xL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estée Lauder Gallery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyz-a7-HIP">
+                                <rect key="frame" x="37" y="44" width="340" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="58"/>
+                                <color key="textColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bq-LF-Vdc">
+                                <rect key="frame" x="37" y="749" width="91" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HomeButton:" destination="Wwo-l1-Tau" eventType="touchUpInside" id="DWU-iK-MNn"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="FCN-om-TkV"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="dot.squareshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BVr-Pt-Vs3">
+                                <rect key="frame" x="37" y="208" width="212" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="dot.squareshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="G3o-rs-Kpp">
+                                <rect key="frame" x="165" y="455" width="212" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXP-8U-t2T">
+                                <rect key="frame" x="287" y="723" width="77" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="tintColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrow.down" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="default">
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="44"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="secondPGGallery:" destination="Wwo-l1-Tau" eventType="touchUpInside" id="Kr7-8n-mpi"/>
+                                    <segue destination="cdt-R8-H6Z" kind="show" id="hg4-vH-mnF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWh-ON-oMk">
+                                <rect key="frame" x="202" y="723" width="77" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="tintColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrow.up" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="default">
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="44"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="secondPGGallery:" destination="Wwo-l1-Tau" eventType="touchUpInside" id="98v-Ju-gsl"/>
+                                    <segue destination="Wwo-l1-Tau" kind="show" id="bT7-80-bhJ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_23" translatesAutoresizingMaskIntoConstraints="NO" id="JAW-vx-Rh7">
+                                <rect key="frame" x="55" y="224" width="176" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_25" translatesAutoresizingMaskIntoConstraints="NO" id="XAW-Ly-hnK">
+                                <rect key="frame" x="183" y="471" width="176" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gmc-45-C2b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ie3-5O-HeF"/>
+                    <connections>
+                        <outlet property="Border6" destination="BVr-Pt-Vs3" id="A85-bQ-BVZ"/>
+                        <outlet property="TitlePt2" destination="Cyz-a7-HIP" id="5qo-fC-ZV6"/>
+                        <outlet property="backgroundGallery2" destination="OHC-Bs-9Ny" id="nB9-Sx-JZ6"/>
+                        <outlet property="border7" destination="G3o-rs-Kpp" id="ksY-F5-qQC"/>
+                        <outlet property="downArrow" destination="qXP-8U-t2T" id="3mh-Cq-AhC"/>
+                        <outlet property="homeButton" destination="2Bq-LF-Vdc" id="kTm-6R-LLp"/>
+                        <outlet property="photo5" destination="JAW-vx-Rh7" id="4DZ-43-4ca"/>
+                        <outlet property="photo6" destination="XAW-Ly-hnK" id="wb2-T3-1Kb"/>
+                        <outlet property="upArrow" destination="mWh-ON-oMk" id="Gt7-Rh-9AU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qPr-tb-GMP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.92753623188406" y="1421.6517857142856"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="LLo-nc-GSk">
+            <objects>
+                <viewController title="Info" modalPresentationStyle="overFullScreen" id="iI5-GJ-ig3" customClass="InfoViewController" customModule="esteelauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a2O-iJ-BaS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wp7606734" translatesAutoresizingMaskIntoConstraints="NO" id="bes-ck-2ld">
+                                <rect key="frame" x="-59" y="-152" width="533" height="1147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estée Lauder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vP-un-mbO">
+                                <rect key="frame" x="34" y="44" width="347" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="58"/>
+                                <color key="textColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14n-1d-qpm">
+                                <rect key="frame" x="75" y="693" width="90" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
+                                <state key="normal" title="Info">
+                                    <color key="titleColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="InfoButton:" destination="iI5-GJ-ig3" eventType="touchUpInside" id="R9D-iA-FDy"/>
+                                    <segue destination="iI5-GJ-ig3" kind="show" id="ffx-ob-1KK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yz7-Tu-ToJ">
+                                <rect key="frame" x="242" y="699" width="91" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HomeButton:" destination="iI5-GJ-ig3" eventType="touchUpInside" id="3Hp-qA-eAt"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="VBU-cW-kIV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srC-an-egd">
+                                <rect key="frame" x="217" y="756" width="140" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
+                                <state key="normal" title="Buy Now">
+                                    <color key="titleColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cbo-Zy-fg6"/>
+                                    <action selector="websiteButton:" destination="iI5-GJ-ig3" eventType="touchUpInside" id="yfp-Uk-AfL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zn6-wJ-F80">
+                                <rect key="frame" x="55" y="754" width="130" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
+                                <state key="normal" title="Gallery">
+                                    <color key="titleColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="galleryButton:" destination="iI5-GJ-ig3" eventType="touchUpInside" id="qYz-4z-a8F"/>
+                                    <segue destination="Wwo-l1-Tau" kind="show" id="XZO-xI-H89"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="dot.squareshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OZb-lw-vzc">
+                                <rect key="frame" x="77" y="212" width="272" height="268"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click arrow for facts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wO-2I-37m">
+                                <rect key="frame" x="34" y="501" width="347" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="30"/>
+                                <color key="textColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXQ-F8-HkQ">
+                                <rect key="frame" x="184" y="631" width="50" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="tintColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <imageReference key="image" image="arrow.right" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="35"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="factButton:" destination="iI5-GJ-ig3" eventType="touchUpInside" id="crp-2Z-ve0"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_8" translatesAutoresizingMaskIntoConstraints="NO" id="f0V-fh-dtp">
+                                <rect key="frame" x="87" y="228" width="252" height="236"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6qx-zp-rQA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UEr-m8-neW"/>
+                    <connections>
+                        <outlet property="Facts" destination="6wO-2I-37m" id="eUH-ML-bh7"/>
+                        <outlet property="TitleOfCompany" destination="9vP-un-mbO" id="jN1-yN-6ae"/>
+                        <outlet property="backgroundInfo" destination="bes-ck-2ld" id="DLf-kw-XLP"/>
+                        <outlet property="borderForInfoPhoto" destination="OZb-lw-vzc" id="gu1-Cx-WJC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lfd-Rn-bfX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.52173913043487" y="77.678571428571431"/>
+        </scene>
+        <!--GalleryPt3-->
+        <scene sceneID="ibQ-ff-gxT">
+            <objects>
+                <viewController title="GalleryPt3" modalPresentationStyle="fullScreen" id="cdt-R8-H6Z" customClass="GalleruPt3ViewController" customModule="esteelauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4T4-qy-dlm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wp7606734" translatesAutoresizingMaskIntoConstraints="NO" id="lea-Oo-WD1">
+                                <rect key="frame" x="-59" y="-101" width="533" height="1147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_25" translatesAutoresizingMaskIntoConstraints="NO" id="lcF-qc-jGi">
+                                <rect key="frame" x="183" y="471" width="176" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmq-ZV-gec">
+                                <rect key="frame" x="-49" y="-91" width="77" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="tintColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrow.down" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="default">
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="44"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="secondPGGallery:" destination="Wwo-l1-Tau" eventType="touchUpInside" id="zTn-uD-Npf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estée Lauder Gallery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDL-r7-1cZ">
+                                <rect key="frame" x="37" y="44" width="340" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="58"/>
+                                <color key="textColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3l0-9E-Y1d">
+                                <rect key="frame" x="37" y="749" width="91" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HomeButton:" destination="Wwo-l1-Tau" eventType="touchUpInside" id="tqM-Lx-UG1"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="hvr-Ef-C5W"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="dot.squareshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NTQ-aR-iIW">
+                                <rect key="frame" x="37" y="208" width="212" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="dot.squareshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6eN-u9-yDR">
+                                <rect key="frame" x="165" y="455" width="212" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpU-0U-kyf">
+                                <rect key="frame" x="287" y="723" width="77" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="tintColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrow.down" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="default">
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="44"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="secondPGGallery:" destination="Wwo-l1-Tau" eventType="touchUpInside" id="Z36-hg-V0a"/>
+                                    <segue destination="A7S-Bm-ByQ" kind="show" id="haz-iE-ZlT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUS-Pb-HEk">
+                                <rect key="frame" x="202" y="723" width="77" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="tintColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrow.up" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="default">
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="44"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="secondPGGallery:" destination="Wwo-l1-Tau" eventType="touchUpInside" id="7bC-E3-eu1"/>
+                                    <segue destination="TND-f6-Aag" kind="show" id="HVW-Fh-nig"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_26" translatesAutoresizingMaskIntoConstraints="NO" id="gID-Az-y0T">
+                                <rect key="frame" x="55" y="224" width="176" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_27" translatesAutoresizingMaskIntoConstraints="NO" id="tUB-3O-wr0">
+                                <rect key="frame" x="183" y="471" width="176" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WjY-Xf-lDX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iTL-5h-ksR"/>
+                    <connections>
+                        <outlet property="Border7" destination="NTQ-aR-iIW" id="Us3-Zy-9lg"/>
+                        <outlet property="TitleGallerypt3" destination="SDL-r7-1cZ" id="YED-TN-qf1"/>
+                        <outlet property="border8" destination="6eN-u9-yDR" id="5ES-ek-Ind"/>
+                        <outlet property="downArrowGalleryPt3" destination="bpU-0U-kyf" id="BuG-QO-JrE"/>
+                        <outlet property="handPhoto1" destination="gID-Az-y0T" id="yNF-9T-1Y2"/>
+                        <outlet property="handPhoto2" destination="tUB-3O-wr0" id="o4W-Ky-BtQ"/>
+                        <outlet property="homeButtonGallerypt3" destination="3l0-9E-Y1d" id="6UR-hQ-xrh"/>
+                        <outlet property="upArrowgallerypt3" destination="sUS-Pb-HEk" id="9w3-dv-yym"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yk-5Y-FuW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="1447"/>
+        </scene>
+        <!--GalleryPt4-->
+        <scene sceneID="vaM-Au-9nc">
+            <objects>
+                <viewController title="GalleryPt4" modalPresentationStyle="fullScreen" id="A7S-Bm-ByQ" customClass="GalleryPt4ViewController" customModule="esteelauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u6L-Jq-y9B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wp7606734" translatesAutoresizingMaskIntoConstraints="NO" id="Iae-Sz-vl1">
+                                <rect key="frame" x="-59" y="-101" width="533" height="1147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_25" translatesAutoresizingMaskIntoConstraints="NO" id="B24-iS-h8q">
+                                <rect key="frame" x="183" y="471" width="176" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvs-db-uNt">
+                                <rect key="frame" x="-49" y="-91" width="77" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="tintColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrow.down" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="default">
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="44"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="secondPGGallery:" destination="Wwo-l1-Tau" eventType="touchUpInside" id="2YN-Cj-BAW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estée Lauder Gallery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyW-Xa-ab4">
+                                <rect key="frame" x="37" y="44" width="340" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="58"/>
+                                <color key="textColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlD-vf-4nS">
+                                <rect key="frame" x="37" y="749" width="91" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HomeButton:" destination="Wwo-l1-Tau" eventType="touchUpInside" id="WTq-WB-9Xj"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="VgC-Os-9xa"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="dot.squareshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zZe-Wu-gsM">
+                                <rect key="frame" x="37" y="208" width="212" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="dot.squareshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aiw-pE-XS1">
+                                <rect key="frame" x="165" y="455" width="212" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.1689547002" green="0.28878402710000001" blue="0.098285727200000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_28" translatesAutoresizingMaskIntoConstraints="NO" id="PbZ-pW-leR">
+                                <rect key="frame" x="55" y="224" width="176" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_29" translatesAutoresizingMaskIntoConstraints="NO" id="dDM-2H-BaH">
+                                <rect key="frame" x="183" y="471" width="176" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNO-vS-kgZ">
+                                <rect key="frame" x="233" y="723" width="77" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="tintColor" red="0.54327356819999995" green="0.31852644679999997" blue="0.1803500354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrow.up" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="default">
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="44"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="secondPGGallery:" destination="Wwo-l1-Tau" eventType="touchUpInside" id="Aiu-Mh-Zsl"/>
+                                    <segue destination="cdt-R8-H6Z" kind="show" id="hOI-4u-Fbu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="v5P-HQ-Nmf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SWS-QN-tbQ"/>
+                    <connections>
+                        <outlet property="BordergalleryFinal" destination="zZe-Wu-gsM" id="AxC-pJ-Era"/>
+                        <outlet property="TitleGalleyFinal" destination="eyW-Xa-ab4" id="e7V-bc-stq"/>
+                        <outlet property="backgroundGalleryfinal" destination="Iae-Sz-vl1" id="zgl-PH-GLs"/>
+                        <outlet property="bordergalleryfinal2" destination="aiw-pE-XS1" id="TFU-We-65f"/>
+                        <outlet property="homeButtonGalleryfinal" destination="BlD-vf-4nS" id="deZ-e1-uLE"/>
+                        <outlet property="upArrowGalleryFinal" destination="DNO-vS-kgZ" id="5n3-XV-Of0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USz-3a-f5e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1822" y="1446"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hOI-4u-Fbu"/>
+        <segue reference="tyn-H3-TCg"/>
+        <segue reference="bT7-80-bhJ"/>
+        <segue reference="bk0-Co-gae"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="EL_19" width="1080" height="1080"/>
+        <image name="EL_21" width="1080" height="1080"/>
+        <image name="EL_23" width="1080" height="1080"/>
+        <image name="EL_25" width="1080" height="1080"/>
+        <image name="EL_26" width="1080" height="1080"/>
+        <image name="EL_27" width="1080" height="1080"/>
+        <image name="EL_28" width="1080" height="1080"/>
+        <image name="EL_29" width="1080" height="1080"/>
+        <image name="EL_4" width="1080" height="1080"/>
+        <image name="EL_8" width="1080" height="1080"/>
+        <image name="arrow.down" catalog="system" width="120" height="128"/>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <image name="arrow.up" catalog="system" width="120" height="128"/>
+        <image name="dot.squareshape.fill" catalog="system" width="128" height="114"/>
+        <image name="wp7606734" width="1400" height="2488"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
